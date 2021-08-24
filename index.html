@@ -3,9 +3,10 @@
 <head>
 
     <meta charset="UTF-8">
+
     <title>Quiz-About-Thailand</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 
 
@@ -13,17 +14,17 @@
     
     <section>
 
-        <header class="sign-in">
+        <header>
 
-            <h1>Enter your name</h1>
-
-            <form id="form-1">
-
-                <input type="text" name="username" placeholder="Enter your name">
-
-                <button type="button" name="reg-btn">Submit <i class="fas fa-caret-right"></i> </button>
-
-            </form>
+            <div class="result-page">
+                <h1>Your result</h1>
+                <ul>
+                    <li>Name: <span class="username"></span> </li>
+                    <li>Your score: <span class="correct_que"></span> </li>
+                    <li>Total-questions: <span>10</span> </li>
+                    <li>Status: <span class="status"></span> </li>
+                </ul>
+            </div>
 
         </header>
 
@@ -41,7 +42,7 @@
                 <div class="que que-1">
                     <h1> &nbsp;<span>--Quiz1--</span> &nbsp; &nbsp;Which is the capital of Thailand?</h1>
                     <ul>
-                        <li><button onclick="right_pick(value)" value="Bangkok">Bangkok</button></li>
+                        <li><button onclick="right_pick()" value="Bangkok">Bangkok</button></li>
                         <li><button onclick="wrong_pick()">Pattaya</button></li>
                         <li><button onclick="wrong_pick()">Phuket</button></li>
                         <li><button onclick="wrong_pick()">chiang mai</button></li>
@@ -54,7 +55,7 @@
                         <li><button onclick="wrong_pick()">Russia</button></li>
                         <li><button onclick="wrong_pick()">Belgium</button></li>
                         <li><button onclick="wrong_pick()">United Kingdom</button></li>
-                        <li><button onclick="right_pick(value)" value="France">France</button></li>
+                        <li><button onclick="right_pick()" value="France">France</button></li>
                     </ul>
                 </div>
                 
@@ -64,7 +65,7 @@
                         <li><button onclick="wrong_pick()">Hinduism</button></li>
                         <li><button onclick="wrong_pick()">Islam</button></li>
                         <li><button onclick="wrong_pick()">Christianity</button></li>
-                        <li><button onclick="right_pick(value)" value="Buddhism">Buddhism</button></li>
+                        <li><button onclick="right_pick()" value="Buddhism">Buddhism</button></li>
                     </ul>
                 </div>
                 
@@ -72,7 +73,7 @@
                     <h1> &nbsp;<span>--Quiz4--</span> &nbsp; &nbsp;Which is the currency of Thailand?</h1>
                     <ul>
                         <li><button onclick="wrong_pick()">Kip</button></li>
-                        <li><button onclick="right_pick(value)" value="Baht">Baht</button></li>
+                        <li><button onclick="right_pick()" value="Baht">Baht</button></li>
                         <li><button onclick="wrong_pick()">Rupee</button></li>
                         <li><button onclick="wrong_pick()">Yen</button></li>
                     </ul>
@@ -84,7 +85,7 @@
                         <li><button onclick="wrong_pick()">Atlantis</button></li>
                         <li><button onclick="wrong_pick()">Formosa</button></li>
                         <li><button onclick="wrong_pick()">Utopia</button></li>
-                        <li><button onclick="right_pick(value)" value="Siam">Siam</button></li>
+                        <li><button onclick="right_pick()" value="Siam">Siam</button></li>
                     </ul>
                     <button class="sec-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
                 </div>
@@ -141,23 +142,14 @@
                         <li><button onclick="right_pick(value)" value="The Elephant">The Elephant</button></li>
                         <li><button onclick="wrong_pick()">The King Cobra</button></li>
                     </ul>
-                    <button class="third-page-btn" >Next <i class="fas fa-caret-right"></i> </button>
                 </div>
 
             </div>
 
 
-            </main>
+        </main>
             
-            <div class="result-page">
-                <h1>your result</h1>
-                <ul>
-                    <li>Name: <span class="username"></span> </li>
-                    <li>Your score: <span class="correct_que"></span> </li>
-                    <li>Total-questions: <span>10</span> </li>
-                    <li>Status: <span class="status"></span> </li>
-                </ul>
-            </div>
+            
 
     </section>
 
